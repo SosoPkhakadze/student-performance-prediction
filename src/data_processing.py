@@ -2,19 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
-# 1. Load the datasets
-df_math = pd.read_csv("data/raw/student-mat.csv", sep=';')
-df_por = pd.read_csv("data/raw/student-por.csv", sep=';')
+df = pd.read_csv("data/raw/student-por.csv", sep=';')
 
-# 2. Add a column to distinguish the subject (Feature Engineering)
-df_math['subject'] = 'Math'
-df_por['subject'] = 'Portuguese'
-
-# 3. Combine them into one large dataset (Bonus: Multiple Data Sources)
-df = pd.concat([df_math, df_por], ignore_index=True)
-
-print(f"Math samples: {df_math.shape[0]}")
-print(f"Portuguese samples: {df_por.shape[0]}")
 print(f"Total Combined samples: {df.shape[0]}")
 df.head()
 

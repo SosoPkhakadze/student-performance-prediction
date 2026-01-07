@@ -1,0 +1,21 @@
+=== MODEL PERFORMANCE REPORT ===
+
+Problem Type: Regression (Predicting G3)
+Model 1: Linear Regression
+ - R2 Score: 0.9084
+ - MSE: 0.7661
+
+Model 2: Decision Tree Regressor
+ - R2 Score: 0.7921
+
+Comparison:
+Linear Regression performed better. This suggests the relationships are mostly linear.
+
+----------------------------------
+Problem Type: Classification (Pass/Fail)
+Model 3: Logistic Regression
+ - Accuracy: 0.8995
+
+Confusion Matrix:
+[[ 29  13]
+ [  7 150]]
